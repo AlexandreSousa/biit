@@ -1,0 +1,9 @@
+FUNÇÃO PROTECT KEY
+    Esta função prove a privacidade do seu site ou seja e possivel incluir o mesmo no buscador
+    mais para que outros acesse o seu site ira precisar de uma senha 
+    
+CAÇADOR DE URL
+    o motor de busca devera procura por url no site caso o mesmo encontro devera incluir no banco de dados e agendar a visita
+    caso o site não exista o mesmo pode agendar uma segunda visita se não for encontrato conteudo la o mesmo sera removido do 
+    banco de dados.
+    

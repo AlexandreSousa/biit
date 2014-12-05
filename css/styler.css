@@ -1,0 +1,54 @@
+body{
+    padding: 0px;
+    margin: 0px;
+}
+.topo{
+    background-color: black;
+    display: block;
+    color: lime;
+    height: 30px;
+    padding-top: 10px;
+    padding-left: 20px;
+    text-align: inherit;
+}
+.corpo{
+    position: absolute;
+    top: 45%;
+    left: 0%;
+    width: 499px;
+    border: solid 1px chocolate;
+}
+.input{
+    border: solid 0px;
+    height: 50px;
+    width: 355px;
+    font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.botao{
+    background-color: transparent;
+    cursor: pointer;
+    height: 50px;
+    background-color: cyan;
+    border: solid 1px rgba(240, 249, 44, 0.12);
+}
+.botao:hover{
+    height: 50px;
+    background-color: cyan;
+}
+
+#div {
+
+    width:700px; /* Tamanho da Largura da Div */
+    height:200px; /* Tamanho da Altura da Div */
+    position:absolute;
+    top:50%;
+    margin-top:-100px; /* ou seja ele pega 50% da altura tela e sobe metade do valor da altura no caso 100 */
+    left:50%;
+    margin-left:-180px; /* ou seja ele pega 50% da largura tela e diminui  metade do valor da largura no caso 250 */
+    border: solid 0px black;
+
+}
+
