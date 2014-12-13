@@ -47,7 +47,7 @@ body{
     top:50%;
     margin-top:-100px; /* ou seja ele pega 50% da altura tela e sobe metade do valor da altura no caso 100 */
     left:50%;
-    margin-left:-180px; /* ou seja ele pega 50% da largura tela e diminui  metade do valor da largura no caso 250 */
+    margin-left:-220px; /* ou seja ele pega 50% da largura tela e diminui  metade do valor da largura no caso 250 */
     border: solid 0px black;
 
 }
