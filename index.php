@@ -1,4 +1,8 @@
 <?php
+   ini_set('display_errors',1);
+    ini_set('display_startup_errors',1);
+    error_reporting(E_ERROR | E_PARSE | E_WARNING );
+    
 require_once ('includes/config.php');
 // não existe variável via url , a ligua é pt
 if(!isset($_GET["lang"])){
@@ -32,7 +36,7 @@ if(isset($busca)) {
 <html xmlns="http://www.w3.org/1999/html">
 <head lang="pt-br">
   <meta charset="UTF-8">
-  <title>Buscador Web</title>
+  <title>Buscador Deep Web Sinta</title>
     <script type="text/javascript" src="js/jquery-1.7.2.js"></script>
     <script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
     <link href="css/styler.css" rel="stylesheet">
@@ -58,7 +62,7 @@ if(isset($busca)) {
 <b>
 
 <?php
-$qt_busca = $qr_busca->num_rows;
+echo $qt_busca = $qr_busca->num_rows;
 if($qt_busca > 0){
 
   }else{ ?>
@@ -79,27 +83,35 @@ if($qt_busca > 0){
         </div>
     </div>
 </form>
+<a href="#">Sinalizar</a><a href="#">#</a><a href="#">#</a><a href="#">#</a>
+
+
+
     <?php if($qt_busca > 0){ ?>
     <hr>
 
         <?php
-        while($row = $qr_busca->fetch_array()){
-        ?>
-
-           <b><a><a href="http://<?php echo $row[2];?> " target="_blank" style="font-size: 12px; color: #2a6496;"><?php echo $row[1].'<br>'; ?></a> </b>
-            <i><font size="2"> <?php echo utf8_encode($row[2]).'<br>'; ?></font></i>
-           <b><a><a href="http://<?php echo $row[2];?>" target="_blank"  style="font-size: 12px; color: green;"><?php echo $row[2].'<br>'; ?></a> </b>
-
-       <?php
+   while($row = $qr_busca->fetch_array()){
+       
+       ?>
+         <b><a href="http://<?php echo $row['title'];?> " target="_blank" style="font-size: 12px; color: #2a6496;"><?php echo $row['title'].'<br>'; ?></a></b>
+         <i><font size="2"> <?php echo utf8_encode($row['desciption']).'<br>'; ?></font></i>
+         <b><a><a href="http://<?php echo $row['url'];?>" target="_blank"  style="font-size: 12px; color: green;"><?php echo $row['url'].'<br>'; ?></a> </b>
+        
+        <?php
         }
-        ?>
+  
+    }
+   ?>
+   
+<?php
+if($qt_busca > 0){
 
-        <?php }else{
-            ?>
-        </div>
-        <?
-        }
-        ?>
-    <?php ?>
+  }else{ ?>
+        </div">
+    <?php
+    }
+    ?>
+   
 </body>
 </html>

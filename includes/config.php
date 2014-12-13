@@ -6,9 +6,9 @@
  * Time: 22:00
  */
 
-$host       = '127.0.0.1';
-$user       = 'root';
-$pass       = '455ttte';
+$host       = getenv('IP');
+$user       = 'alexandresousa';
+$pass       = '';
 $base       = 'biit';
 
 $db = new mysqli($host,$user,$pass,$base);
