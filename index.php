@@ -83,7 +83,10 @@ if($qt_busca > 0){
         </div>
     </div>
 </form>
-<a href="#">Sinalizar</a><a href="#">#</a><a href="#">#</a><a href="#">#</a>
+<a href="#">Sinalizar</a><a href="#">#</a><a href="#">outro</a><a href="#">#</a>
+
+
+
 
 
 
